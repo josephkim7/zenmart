@@ -1,0 +1,14 @@
+/* command css is always called so we do some general commands here */
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  margin: 0;
+}
