@@ -297,4 +297,55 @@ p {
   color: #ffffff;
 }
 
-/* CSS HEADER PART STARTS BELOW */
+/* Pagionation part starts below */
+.container .pagionation_box {
+  margin-top: 30px;
+  width: 100%;
+  height: auto;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.container .pagionation_box .pagionation_main {
+  width: auto;
+  height: 24px;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.pagionation_main img {
+  cursor: pointer;
+}
+
+.container .pagionation_main .pagionation_dot {
+  margin: 0px 20px;
+  display: flex;
+  flex-direction: row;
+}
+
+.container .pagionation_dot .dot {
+  width: 20px;
+  height: 20px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  /* border: 2px solid #112137; */
+  border-radius: 50%;
+}
+
+.container .pagionation_dot .dot.active {
+  border: 2px solid #112137;
+}
+
+.container .pagionation_dot .dot div {
+  width: 4px;
+  height: 4px;
+  background: #112137;
+  border-radius: 50%;
+}
