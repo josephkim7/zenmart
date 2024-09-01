@@ -349,3 +349,11 @@ p {
   background: #112137;
   border-radius: 50%;
 }
+
+.container .hover_border {
+  margin-top: 3px;
+  width: 32px;
+  height: 2px;
+
+  background: #041e42;
+}
