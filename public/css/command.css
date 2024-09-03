@@ -357,3 +357,12 @@ p {
 
   background: #041e42;
 }
+.selling_product_frame .product_wrapper .next_prev_box {
+  width: 25px;
+}
+
+.selling_product_frame .next_prev_box img {
+  position: absolute;
+  top: 50%;
+  cursor: pointer;
+}

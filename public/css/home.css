@@ -15,6 +15,11 @@
   align-items: center;
 }
 
+.container .category_top div {
+  display: flex;
+  flex-direction: row;
+}
+
 .container .category_top span {
   font-family: "Jost";
   font-style: normal;
@@ -26,6 +31,7 @@
 }
 
 .container .category_top a {
+  margin-left: 20px;
   font-family: "Jost";
   font-style: normal;
   font-weight: 500;
@@ -566,7 +572,7 @@
   flex-direction: column;
 }
 
-.container .spec_product_wrapper {
+.spec_product_frame .container .spec_product_wrapper {
   position: relative;
   margin-top: 35px;
   width: 100%;
@@ -576,7 +582,7 @@
   flex-direction: row;
 }
 
-.spec_product_wrapper .big_product_box {
+.spec_product_frame .spec_product_wrapper .big_product_box {
   position: relative;
   padding: 30px;
   width: 664px;
@@ -591,14 +597,14 @@
   border-radius: 6px;
 }
 
-.big_product_box .big_product_content {
+.spec_product_frame .big_product_box .big_product_content {
   width: 160px;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
 }
 
-.big_product_content span {
+.spec_product_frame .big_product_content span {
   font-family: "Jost";
   font-style: normal;
   font-weight: 400;
@@ -607,7 +613,7 @@
   color: #041e42;
 }
 
-.big_product_content p {
+.spec_product_frame .big_product_content p {
   margin: 7px 0;
   font-family: "Jost";
   font-style: normal;
@@ -617,7 +623,7 @@
   color: #041e42;
 }
 
-.big_product_content a {
+.spec_product_frame .big_product_content a {
   font-family: "Jost";
   font-style: normal;
   font-weight: 500;
@@ -626,7 +632,7 @@
   color: #041e42;
 }
 
-.big_product_box img {
+.spec_product_frame .big_product_box img {
   position: absolute;
   width: 322px;
   height: 309px;
@@ -634,7 +640,7 @@
   right: 5%;
 }
 
-.spec_product_wrapper .small_product_wrapper {
+.spec_product_frame .spec_product_wrapper .small_product_wrapper {
   margin-left: 30px;
   width: 620px;
   height: 368px;
@@ -645,7 +651,7 @@
   flex-wrap: wrap;
 }
 
-.small_product_wrapper .small_product_box {
+.spec_product_frame .small_product_wrapper .small_product_box {
   position: relative;
   padding: 30px;
   width: 293px;
@@ -660,16 +666,16 @@
   border-radius: 6px;
 }
 
-.small_product_box:nth-child(even) {
+.spec_product_frame .small_product_box:nth-child(even) {
   margin-left: 30px;
 }
 
-.small_product_box .small_product_content {
+.spec_product_frame .small_product_box .small_product_content {
   display: flex;
   flex-direction: column;
 }
 
-.small_product_content strong {
+.spec_product_frame .small_product_content strong {
   font-family: "Jost";
   font-style: normal;
   font-weight: 500;
@@ -678,7 +684,7 @@
   color: #041e42;
 }
 
-.small_product_content span {
+.spec_product_frame .small_product_content span {
   font-family: "Jost";
   font-style: normal;
   font-weight: 400;
@@ -687,8 +693,202 @@
   color: #626974;
 }
 
-.small_product_box img {
+.spec_product_frame .small_product_box img {
   position: absolute;
   right: 30px;
   top: 40px;
+}
+
+/* SPEC PRODUCT FRAME ENDS HERE */
+
+/* TV FRAME VIEW STARTS BELOW */
+.home_page .tv_frame {
+  position: relative;
+  margin-top: 90px;
+  width: 100%;
+  height: auto;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.tv_frame .container {
+  flex-direction: column;
+}
+
+.container .tv_wrapper {
+  margin-top: 30px;
+  width: 100%;
+  height: auto;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.tv_wrapper .next_prev_box {
+  width: 25px;
+}
+
+.next_prev_box img {
+  position: absolute;
+  top: 50%;
+  cursor: pointer;
+}
+
+.tv_wrapper .tv_product_boxes {
+  width: 1300px;
+  height: 452px;
+
+  display: flex;
+  flex-direction: row;
+}
+
+.tv_product_boxes .tv_product_box {
+  width: 260px;
+  height: 452px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.tv_product_box .product_img {
+  width: 100%;
+  height: 280px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.product_content_box {
+  padding: 5px 22px;
+  width: 100%;
+  height: auto;
+  box-sizing: border-box;
+}
+
+.product_content_box .product_title {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 22px;
+  text-transform: uppercase;
+  color: #626974;
+}
+
+.product_content_box .product_desc {
+  margin-top: 7px;
+  height: 56px;
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 28px;
+  overflow: hidden;
+  color: #041e42;
+}
+
+.product_content_box .review_box {
+  margin-top: 7px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.review_box img {
+  margin-right: 5px;
+}
+
+.review_box span {
+  margin-left: 10px;
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  color: #626974;
+}
+
+.product_content_box .price_box {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.price_box strong {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 26px;
+  color: #041e42;
+}
+
+.price_box span {
+  margin-left: 10px;
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  text-decoration-line: line-through;
+  color: #626974;
+}
+
+.container .pagionation_box {
+  margin-top: 30px;
+  width: 100%;
+  height: auto;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.pagionation_box .pagionation_main {
+  width: auto;
+  height: 24px;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.pagionation_main img {
+  cursor: pointer;
+}
+
+.pagionation_main .pagionation_dot {
+  margin: 0px 20px;
+  display: flex;
+  flex-direction: row;
+}
+
+.pagionation_dot .dot {
+  width: 20px;
+  height: 20px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  /* border: 2px solid #112137; */
+  border-radius: 50%;
+}
+
+.pagionation_dot .dot.active {
+  border: 2px solid #112137;
+}
+
+.pagionation_dot .dot div {
+  width: 4px;
+  height: 4px;
+  background: #112137;
+  border-radius: 50%;
 }
