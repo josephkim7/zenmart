@@ -257,7 +257,7 @@
   flex-direction: column;
 }
 .service_frame .service_content span {
-  font-family: "Jost";
+  font-family: var(--font);
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
@@ -959,7 +959,7 @@
 }
 
 .event_frame .timer_box span {
-  font-family: "Jost";
+  font-family: var(--font);
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
